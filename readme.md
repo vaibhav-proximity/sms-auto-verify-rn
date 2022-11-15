@@ -1,26 +1,10 @@
-```
 ### Install
 
-```
 
+```
 $ yarn add react-native-sms-user-consent
-
 ```
 
-### Link
-
-- **React Native 0.60+**
-
-
-[CLI autolink feature](https://github.com/react-native-community/cli/blob/master/docs/autolinking.md) links the module while building the app. 
-
-
-- **React Native <= 0.59**
-
-
-```bash
-$ react-native link react-native-sms-user-consent
-```
 
 ## Install dependencies
 
