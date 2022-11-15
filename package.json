@@ -17,7 +17,8 @@
     "react-native-loading-spinner-overlay": "^3.0.1",
     "react-native-otp-verify": "^1.0.5",
     "react-native-safe-area-context": "^4.4.1",
-    "react-native-screens": "^3.18.2"
+    "react-native-screens": "^3.18.2",
+    "react-native-sms-user-consent": "^1.0.51"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

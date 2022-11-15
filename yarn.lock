@@ -5540,6 +5540,11 @@ react-native-screens@^3.18.2:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
+react-native-sms-user-consent@^1.0.51:
+  version "1.0.51"
+  resolved "https://registry.yarnpkg.com/react-native-sms-user-consent/-/react-native-sms-user-consent-1.0.51.tgz#ec080351150ec2f71083f3794cf907a15f0be9a5"
+  integrity sha512-zggQrpV98iNjUdGcgScBNgAcHIRHLKoT+KKNZtxldTQRJ77p0FHABhlftwCoLcHUhYnaofAL84XNnXSZh+acLQ==
+
 react-native@0.70.3:
   version "0.70.3"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.70.3.tgz#a5315ce14dd3f51f9ef97827af5b0a470ade1d9c"
