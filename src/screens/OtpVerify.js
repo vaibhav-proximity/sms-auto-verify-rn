@@ -37,11 +37,10 @@ const OtpVerify = () => {
   //   return () => RNOtpVerify.removeListener();
   // }, [otpHandler]);
 
-  interface SMSMessage {
-    receivedOtpMessage: string;
-  }
-
-  const getSMSMessage = async () => {
+  const getSMSMessage = useCallback(async () => {
+    interface SMSMessage {
+      receivedOtpMessage: string;
+    }
     console.log('starting receiver for otp');
     try {
       const message: SMSMessage = await SMSUserConsent.listenOTP();
@@ -53,7 +52,8 @@ const OtpVerify = () => {
       // error
       console.error(e);
     }
-  };
+  }, [otpHandler]);
+
   const removeSmsListener = () => {
     try {
       SMSUserConsent.removeOTPListener();
@@ -62,9 +62,10 @@ const OtpVerify = () => {
     }
   };
 
-  // removeSmsListener();
-  getSMSMessage();
-
+  useEffect(() => {
+    getSMSMessage();
+    return () => removeSmsListener();
+  }, [getSMSMessage]);
   return (
     <View style={styles.container}>
       {loading && <Loader text="Redirecting..." />}
